@@ -1,0 +1,1 @@
+## Aici punem feature-ile precum autentificare, proiecte, todos, settings fiecare dintre ele la randul lor avand alte foldere cu componentele hooks-urile si serviciile acesteia => e ca un fel de src pentru fiecare features implementat

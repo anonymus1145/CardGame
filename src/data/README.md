@@ -1,0 +1,1 @@
+## Aici punem fisiere .json sau variabile constante care nu se schimba

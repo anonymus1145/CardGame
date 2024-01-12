@@ -1,0 +1,1 @@
+## Aici punem toate utility files (functii mici si pure) si testele fiecaruia

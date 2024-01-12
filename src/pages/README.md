@@ -1,0 +1,1 @@
+## Aici punem paginile create gen HOME LOGIN SETTINGS si testele acestora
