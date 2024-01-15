@@ -10,9 +10,16 @@ import {
     AlertDialogDescription,
     AlertDialogAction,
     AlertDialogCancel,
-  } from "../components/ui/alert-dialog"
+} from "../components/ui/alert-dialog"
+import { Game } from "../pages/game"
+import { useState} from "react"
 
 export function IntroPage() {
+    const [open, setOpen] = useState(false)
+
+    if (open) {
+        return <Game />
+    }
     return (
         <div>
             <AlertDialog>
@@ -31,7 +38,7 @@ export function IntroPage() {
                         </AlertDialogHeader>
                         <AlertDialogFooter>
                             <AlertDialogCancel>Cancel</AlertDialogCancel>
-                            <AlertDialogAction>Continue</AlertDialogAction>
+                            <AlertDialogAction onClick={() => setOpen(true)}>Continue</AlertDialogAction>
                         </AlertDialogFooter>
                     </AlertDialogContent>
                 </AlertDialogPortal>
