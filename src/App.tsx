@@ -1,12 +1,13 @@
+import { IntroPage } from "./pages/intro"
 
 function App() {
 
   return (
-    <div className="text-center">
-      <h1 className="text-3xl font-bold underline text-red-500">
-        Gods Game
-      </h1>
-    </div>
+    <>
+      <div className="flex justify-center items-center h-screen w-screen ">
+        <IntroPage />
+      </div>
+    </>
   )
 }
 
