@@ -1,30 +1,90 @@
-# React + TypeScript + Vite
+# Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive React-based card game showcasing dynamically fetched card objects.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Welcome to the React Card Game! This project is a simple React application that fetches card objects from an API and displays them as interactive cards in a game.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Fetches card objects from a remote API.
+- Displays interactive cards in a flex layout.
+- Provides an engaging user interface for a card-based game.
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+# Clone the repository
+git clone https://github.com/anonymus1145/CardGame.git
+
+# Navigate to the project directory
+cd CardGame
+
+# Install dependencies
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Usage
+
+To start the React Card Game, run the following command:
+
+```bash
+# Start the application
+npm start
+```
+
+This will start the development server and open the application in your default web browser.
+
+
+## Folder Structure
+
+The project's folder structure is organized as follows:
+
+/src
+  ├── components
+  │   ├── objects
+  │   │   └── SingleCard.js
+  ├── services
+  │   └── fetchImages.js
+  ├── App.js
+  └── ...
+
+#### components: Contains React components used in the application.
+#### services: Includes service files for fetching data.
+
+
+## Dependencies
+
+React: ^17.0.2
+Axios: ^0.24.0
+
+
+## Contributing
+
+We welcome contributions to improve the CardGame project. Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request.
+
+
+## License
+
+This project is licensed under the MIT License.
